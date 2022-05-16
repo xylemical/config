@@ -17,7 +17,7 @@ composer require xylemical/config
 use Xylemical\Config\ConfigBuilder;
 
 $source = ...; // A source defined by \Xylemical\Config\Source\SourceInterface.
-$builder = new ConfigBuilder($source, 'config/config.php');
+$builder = new ConfigBuilder($source);
 $configFactory = $builder->getFactory();
 
 ```
